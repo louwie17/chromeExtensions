@@ -1,0 +1,11 @@
+{
+    "name": "CatchAngularDigests",
+    "manifest_version": 2,
+    "version": "1.0",
+    "description": "Catch angular digests",
+    "permissions": ["tabs", "http://*/*"],
+    "content_scripts" : [{
+        "matches" : [ "http://arc.mtvnservices.com/*", "http://arc.mtvnservices-d.mtvi.com/*"],
+        "js" : ["script.js"]
+    }]
+}
